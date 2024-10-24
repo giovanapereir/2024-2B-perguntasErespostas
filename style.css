@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --fonte-destaque: "Bebas Neue", serif;
+    --fonte-texto:"Hind Siliguri", serif;
+    --cor1: #eaeaeaff;
+    --cor2: #893168ff;
+    --cor3: #4a1942ff;
+    --cor4: #2e1c2bff;
+    --cor5: #050404ff;
+    --cor6: #f2bb05;
+}
+
+body{
+    background-color:var(--cor1);
+    font-family: var(--fonte-texto);
+}
+
+footer{
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--cor3);
+    padding: 1em;
+}
+
+footer p{
+    font-size: 1.2rem;
+    color: var(--cor1)
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--cor1)
+}

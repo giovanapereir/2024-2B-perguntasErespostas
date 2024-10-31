@@ -19,6 +19,69 @@
 body{
     background-color:var(--cor1);
     font-family: var(--fonte-texto);
+    color: var(--cor5);
+}
+
+#caixas{ 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 4rem;
+    gap: 2rem;
+}
+
+.cartao{
+    margin: 1em;
+    background-color: var(--cor2);
+    height: 20rem;
+    flex-grow: 1;
+    flex-basis: calc(33%-6rem);
+}
+
+.cartao__conteudo{
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    transform-style: preserve-3d;
+    transition: transform 300ms ease-in-out;
+}
+.cartao:hover .cartao__conteudo{
+    transform: rotateY(180deg);
+}
+.cartao__conteudo h3{
+border: 2px solid var(--cor5);
+color: var(--cor3);
+font-family: var(--fonte-destaque);
+text-align: center;
+padding: 0.5rem;
+position: absolute;
+margin: 0.6em;
+border-radius: 0.6em;
+font-size: 1.5vw;
+backface-visibility: hidden;
+}
+
+.cartao__conteudo__pergunta{
+    font-size: 1.5rem;
+    margin: 2.5rem;
+}
+
+.cartao__conteudo__pergunta,
+.cartao__conteudo__resposta{
+    backface-visibility: hidden;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.cartao__conteudo p{
+    margin: 1rem;
+    padding: 1.3rem;
+}
+
+.cartao__conteudo__resposta{
+font-size: 1.5rem;
 }
 
 footer{

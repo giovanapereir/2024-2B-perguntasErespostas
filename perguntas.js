@@ -10,7 +10,7 @@ criaCartao(
 )
 criaCartao(
     "matematica",
-   " qual e a soma de 1 a 1oo?",
+   " qual e a soma de 1 a 100?",
    "5050"
 )
 
